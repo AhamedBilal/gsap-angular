@@ -1,1 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+body, html{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.branch{
+  height: 200px;
+  left: 45%;
+  top: -2%;
+  -webkit-transform: translate(-50%, 0);
+  position: absolute;
+}
+.apple{
+  height: 130px;
+  left: 45%;
+  top: 100px;
+  position: absolute;
+  transform-origin: top center;
+  -webkit-transform-origin: top center;
+  -webkit-transform: translate(-50%, 0);
+  z-index: 10;
+}
