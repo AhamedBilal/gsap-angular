@@ -17,14 +17,14 @@ header{
 }
 
 .branch{
-  height: 100px;
+  height: 120px;
   left: 45%;
   top: -2%;
   -webkit-transform: translate(-50%, 0);
   position: absolute;
 }
 .apple{
-  height: 60px;
+  height: 80px;
   left: 45%;
   top: 50px;
   position: absolute;
@@ -71,8 +71,27 @@ header{
   position: absolute;
 }
 @media screen and (max-width: 425px) {
+
+  .branch{
+    height: 80px;
+    left: 45%;
+    top: -2%;
+    -webkit-transform: translate(-50%, 0);
+    position: absolute;
+  }
+  .apple{
+    height: 50px;
+    left: 45%;
+    top: 30px;
+    position: absolute;
+    transform-origin: top center;
+    -webkit-transform-origin: top center;
+    -webkit-transform: translate(-50%, 0);
+    z-index: 10;
+  }
+
   #ket{
-    height: 300px;
+    height: 200px;
     bottom: 0;
   }
 }

@@ -36,7 +36,7 @@ export class AppComponent implements OnInit {
           defaults: {duration: 1}
         });
         tl.set('.apple, .branch', {xPercent: -50})
-          .set('#ket', {left: x, xPercent: -50})
+          .set('#ket', {left: x, xPercent: -60})
           .from('.apple, .branch', {y: -230, duration: 10})
           .to('.apple', {duration: 10, rotate: -10})
           .to('.apple', {duration: 10, rotate: 10})
