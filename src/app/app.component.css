@@ -38,16 +38,16 @@ header{
   font-size: 36px;
   position: absolute;
   bottom: 20%;
-  left: 50%;
-  -webkit-transform: translate(-50%, 0);
+  width: 100%;
+  text-align: center;
 
 }
 .text2{
   font-size: 36px;
   position: absolute;
   top: 10%;
-  left: 50%;
-  -webkit-transform: translate(-50%, 0);
+  width: 100%;
+  text-align: center;
 }
 #cupSVG{
   bottom: 0;
@@ -93,5 +93,21 @@ header{
   #ket{
     height: 200px;
     bottom: 0;
+  }
+
+  .text{
+    font-size: 18px;
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+
+  }
+  .text2{
+    font-size: 18px;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
   }
 }
