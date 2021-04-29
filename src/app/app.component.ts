@@ -10,6 +10,20 @@ import ScrollTrigger from 'gsap/ScrollTrigger';
 export class AppComponent implements OnInit {
   title = 'gsap-angular';
 
+  constructor() {
+    this.imgPreLoad(
+      '../assets/img/kt-1.fw.png',
+      '../assets/img/kt-2.fw.png',
+      '../assets/img/kt-3.fw.png',
+      '../assets/img/kt-4.fw.png',
+      '../assets/img/kt-5.fw.png',
+      '../assets/img/kt-6.fw.png',
+      '../assets/img/kt-7.fw.png',
+      '../assets/img/kt-8.fw.png',
+      '../assets/img/kt-9.fw.png'
+    );
+  }
+
   ngOnInit(): void {
     gsap.registerPlugin(ScrollTrigger);
     this.initScrollTriggers();
@@ -116,5 +130,13 @@ export class AppComponent implements OnInit {
 
     });
 
+  }
+
+  imgPreLoad(...args): void {
+    const images = new Array();
+    for (let i = 0; i < args.length; i++) {
+      images[i] = new Image();
+      images[i].src = args[i];
+    }
   }
 }
